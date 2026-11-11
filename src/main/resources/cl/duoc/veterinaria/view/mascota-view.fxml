@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.duoc.veterinaria.controller.MascotaController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelChip" layoutX="95.0" layoutY="86.0" text="Chip" />
+            <Label fx:id="labelNombre" layoutX="95.0" layoutY="158.0" text="Nombre" />
+            <Label fx:id="labelFechaNacimiento" layoutX="95.0" layoutY="232.0" text="Fecha nacimiento" />
+            <TextField fx:id="textFieldChip" layoutX="232.0" layoutY="82.0" prefHeight="25.0" prefWidth="173.0" promptText="ingrese numero chip" />
+            <TextField fx:id="textFieldNombre" layoutX="232.0" layoutY="154.0" prefHeight="25.0" prefWidth="177.0" promptText="ingrese nombre" />
+            <DatePicker fx:id="datePickerFechaNacimiento" layoutX="232.0" layoutY="228.0" promptText="ingrese fecha nacimiento" />
+            <Button fx:id="buttonAgregar" layoutX="244.0" layoutY="312.0" mnemonicParsing="false" onAction="#agregarMascota" text="Agregar" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
